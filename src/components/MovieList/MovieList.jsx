@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { MoviesList, MovieItem, Title, Img } from "./MovieList.styled";
+import { MoviesList, MovieItem, Title, Img, Container } from "./MovieList.styled";
 
 export const MovieList = ({ movies }) => {
 const location = useLocation();
@@ -15,8 +15,10 @@ if(!movies){
         
         return <MovieItem key={movie.id}>
           <Link to={`/movies/${movie.id}`} state={{ from: location}}>
-            <Title>{movie.title}</Title>
+           <Container>
+           <Title>{movie.title}</Title>
             <Img src={image} alt={movie.title}/>
+           </Container>
           </Link>
 
         </MovieItem>

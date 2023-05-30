@@ -25,7 +25,7 @@ function Cast () {
     <List>
       {castInfo.map(({character, name, profile_path, id}) => {
         const castImage = profile_path ? `https://image.tmdb.org/t/p/w500${profile_path}` :
-         'https://img1.wsimg.com/isteam/ip/bc473ead-66a2-452b-8269-b247bfe9772e/oopps.jpg/:/rs=w:1280';
+         'https://png.pngtree.com/png-vector/20190820/ourmid/pngtree-no-avatar-vector-isolated-on-white-background-png-image_1694546.jpg';
           
          return (
           <Item key={id}>
